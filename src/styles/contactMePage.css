@@ -1,0 +1,243 @@
+.container{
+    max-height: 100vh;
+    overflow-y: hidden;
+}
+
+.full-height{
+    overflow-y: -150;
+    height: calc(100vh - 56px);
+    align-items: center;
+}
+
+
+.col-5{
+    display: flex;
+    flex-direction: column;
+}
+
+h5{
+    padding: 0;
+    margin: 0;
+    font-weight: 400;
+}
+
+.circle{
+    z-index: 100;
+    border: 2px solid black;
+    border-radius: 100%;
+    text-align: center;
+    width: max-content;
+    padding: 10px;
+}
+
+.line-up{
+    width: 0px;
+    height: calc(49vh - 70px);
+    border: 1px black solid;
+    margin-left: 23px;
+}
+.line-down{
+    margin-left: 23px;
+    width: 0px;
+    height: 48.5vh;
+    border: 1px black solid;
+}
+
+input[type="text"]{
+    border: none;
+    border-radius: 0;
+    height: min-content;
+    padding: 0;
+    padding-left: 5px;
+    border-bottom: 1px black solid;
+}
+
+input[type="text"]:focus,
+.text-for-email:focus{
+    border-color: inherit;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+.input-name:focus + .floating-label-name,
+.input-name:not(:focus):valid + .floating-label-name{  
+  top: 45px;
+  left: 20px;
+  font-size: 12px;
+  opacity: 1;
+}
+
+.input-email:focus + .floating-label-email,
+.input-email:not(:focus):valid + .floating-label-email{  
+  top: 95px;
+  left: 20px;
+  font-size: 12px;
+  opacity: 1;
+}
+
+.text-for-email:focus + .floating-label-msg,
+.text-for-email:not(:focus):valid + .floating-label-msg{  
+  top: 140px;
+  left: 20px;
+  font-size: 12px;
+  opacity: 1;
+}
+
+ 
+
+.floating-label-name {
+  position: absolute;
+  pointer-events: none;
+  left: 20px;
+  top: 60px; 
+  transition: 0.2s ease all;
+  font-size: 18px;
+}
+
+.text-for-name-error{
+    background-color: red;
+}
+.text-for-name-error + .floating-label-name{
+    color: red;
+}
+
+.floating-label-email {
+    position: absolute;
+    pointer-events: none;
+    left: 20px;
+    top: 110px; 
+    transition: 0.2s ease all;
+    font-size: 18px;
+}
+
+.text-for-email{
+    border: none;
+    border-radius: 0;
+    height: min-content;
+    padding: 0;
+    padding-left: 5px;
+    border-bottom: 1px black solid;
+}
+
+.text-for-email-error{
+    background-color: red;
+}
+.text-for-email-error ~ .floating-label-email{
+    color: red;
+}
+
+.floating-label-msg {
+    position: absolute;
+    pointer-events: none;
+    left: 20px;
+    top: 160px; 
+    transition: 0.2s ease all;
+    font-size: 18px;
+}
+
+.text-for-msg-error{
+    background-color: red;
+}
+.text-for-msg-error + .floating-label-msg{
+    color: red;
+}
+
+.send-btn{
+    background-color: #00ee55;
+    height: 70px;
+    width: 70px;
+    border-radius: 100px;
+}
+
+.check-1{
+    position: absolute;
+    top: 15px;
+    left: 40px;
+    height: 35px;
+    width: 10px;
+    background-color: white;
+    transform: rotateZ(45deg);
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    animation: load-check 2s ease;
+}
+
+.check-2{
+    position: absolute;
+    top: 29px;
+    left: 21px;
+    height: 25px;
+    width: 10px;
+    background-color: white;
+    transform: rotateZ(-45deg);
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    animation: load-check 2s ease;
+}
+
+.btn:disabled {
+    opacity: 1;
+}
+
+.contact-me-text{
+    transform: translateY(-100px);
+}
+
+@media (max-width: 768px) {
+    .container{
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 609px){
+    .container{
+        overflow-y: auto;
+    }
+    .row{
+        padding-top: 10vh;
+        flex-direction: column;
+    }
+    .col-5{
+        display: flex;
+        flex-direction: column;
+        flex:4;
+        max-width: 90%;
+        align-items: center;
+        justify-content: center;
+    }
+    .col-6{
+        
+        flex: 5;
+        max-width: 90%;
+    }
+    .col-1{
+        max-width: 100%;
+    }
+    .or-sign{
+        margin: 5vh 0;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+    .line-up{
+        width: 270px;
+        height: 1px;
+        margin-left: 0px;
+    }
+    .line-down{
+        width: 270px;
+        height: 1px;
+        margin-left: 0px;
+    }
+
+    .contact-me-text{
+        transform: translateY(0);
+    }
+}
+
+@keyframes load-check{
+    0%{
+        background-color: #00ee55;
+    }
+}

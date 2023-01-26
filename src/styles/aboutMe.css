@@ -1,0 +1,20 @@
+.text-section{
+    height: calc(100vh - 56px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    animation: slowLoadAboutMe 1s ease ;
+}
+
+.link-about-me{
+    animation: slowLoadAboutMe 2s ease ;
+}
+
+@keyframes slowLoadAboutMe{
+    0%{
+        transform: translateY(50px);
+        color: rgba(0, 0, 0, 0);
+    }
+    
+}

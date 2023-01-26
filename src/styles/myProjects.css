@@ -1,0 +1,32 @@
+.virtual-phone{
+    height: 700px;
+    width: 450px
+}
+.text-left{
+    width: 50%;
+}
+
+@media screen and (max-width: 1200px) {
+    .text-left{
+        width: 40%;
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .chat-phone{
+        margin-bottom: 10px;
+    }
+
+    .text-left{
+        width: 100%;
+        margin-top: 10px;
+    }
+}
+
+
+@media screen and (max-width: 570px) {
+    .virtual-phone{
+        width: 90vw;
+        height: calc(90vw * 1.55555555555555);
+    }
+}
