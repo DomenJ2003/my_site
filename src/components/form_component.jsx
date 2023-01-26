@@ -51,7 +51,7 @@ function FormComponent() {
         
         btnRef.current.disabled = true;
 
-        emailjs.sendForm('service_fowjsha', "template_344fv1h", formRef.current, 'MF8qgpu-nu48xYOJH')
+        emailjs.sendForm('SERVICE_ID', "TEMPLATE_ID", formRef.current, 'PUBLIC_KEY')
           .then((result) => {
                     nameRef.current.value = "";
                     senderMailRef.current.value= "";
