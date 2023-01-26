@@ -1,4 +1,5 @@
 import 'react';
+import {Link} from 'react-router-dom'
 
 function Navbar(props) {
     return (
@@ -13,22 +14,22 @@ function Navbar(props) {
                         props.selectedItem == 0
                             ?
                             <li className="nav-item active">
-                                <a className="nav-link" href="/">Home</a>
+                                <Link className="nav-link" to="/">Home</Link>
                             </li>
                             :
                             <li className="nav-item">
-                                <a className="nav-link" href="/">Home</a>
+                                <Link className="nav-link" to="/">Home</Link>
                             </li>
                     }
                     {
                         props.selectedItem == 1
                             ?
                             <li className="nav-item active">
-                                <a className="nav-link" href="/my-projects">My Projects</a>
+                                <Link className="nav-link" to="/my-projects">My Projects</Link>
                             </li>
                             :
                             <li className="nav-item">
-                                <a className="nav-link" href="/my-projects">My Projects</a>
+                                <Link className="nav-link" to="/my-projects">My Projects</Link>
                             </li>
 
                     }
@@ -36,11 +37,11 @@ function Navbar(props) {
                         props.selectedItem == 2
                             ?
                             <li className="nav-item active">
-                                <a className="nav-link" href="/about-me">About Me</a>
+                                <Link className="nav-link" to="/about-me">About Me</Link>
                             </li>
                             :
                             <li className="nav-item">
-                                <a className="nav-link" href="/about-me">About Me</a>
+                                <Link className="nav-link" to="/about-me">About Me</Link>
                             </li>
 
                     }
@@ -48,11 +49,11 @@ function Navbar(props) {
                         props.selectedItem == 3
                             ?
                             <li className="nav-item active">
-                                <a className="nav-link" href="/contact-me">Contact Me</a>
+                                <Link className="nav-link" to="/contact-me">Contact Me</Link>
                             </li>
                             :
                             <li className="nav-item">
-                                <a className="nav-link" href="/contact-me">Contact Me</a>
+                                <Link className="nav-link" to="/contact-me">Contact Me</Link>
                             </li>
                     }
                 </ul>

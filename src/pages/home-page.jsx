@@ -1,5 +1,6 @@
-import LazyLoad from 'react-lazy-load';
 import Navbar from "../components/navbar";
+import "react";
+import {Link} from "react-router-dom"
 import "../styles/homePage.css"
 function HomePage() {
     return (
@@ -30,12 +31,12 @@ function HomePage() {
                             <i className="fa-solid fa-code m-1"></i>
                             </div>
                             <div className="d-flex m-row">
-                            <a className="btn btn-light btn-lg" href="/my-projects" role="button">
+                            <Link className="btn btn-light btn-lg" to="/my-projects" role="button">
                                 My Projects
-                            </a>
-                            <a className="btn btn-light btn-lg" href="/about-me" role="button">
+                            </Link>
+                            <Link className="btn btn-light btn-lg" to="/about-me" role="button">
                                 About Me
-                            </a>
+                            </Link>
                             </div>
                             
                         </div>
