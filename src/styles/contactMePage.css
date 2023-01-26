@@ -95,7 +95,7 @@ input[type="text"]:focus,
 }
 
 .text-for-name-error{
-    background-color: red;
+    background-color: rgba(255, 0, 0, 0.1);;
 }
 .text-for-name-error + .floating-label-name{
     color: red;
@@ -120,7 +120,7 @@ input[type="text"]:focus,
 }
 
 .text-for-email-error{
-    background-color: red;
+    background-color: rgba(255, 0, 0, 0.1);
 }
 .text-for-email-error ~ .floating-label-email{
     color: red;
@@ -136,7 +136,7 @@ input[type="text"]:focus,
 }
 
 .text-for-msg-error{
-    background-color: red;
+    background-color: rgba(255, 0, 0, 0.1);;
 }
 .text-for-msg-error + .floating-label-msg{
     color: red;
@@ -150,22 +150,21 @@ input[type="text"]:focus,
 }
 
 .check-1{
-    position: absolute;
-    top: 15px;
-    left: 40px;
+    position: relative;
+    left: 5.5px;
     height: 35px;
     width: 10px;
     background-color: white;
     transform: rotateZ(45deg);
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
-    animation: load-check 2s ease;
+    animation: load-check 1s ease;
 }
 
 .check-2{
-    position: absolute;
-    top: 29px;
-    left: 21px;
+    position: relative;
+    top: -20px;
+    left: -15px;
     height: 25px;
     width: 10px;
     background-color: white;
@@ -173,7 +172,7 @@ input[type="text"]:focus,
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
     border-bottom-left-radius: 5px;
-    animation: load-check 2s ease;
+    animation: load-check 1s ease;
 }
 
 .btn:disabled {
@@ -239,5 +238,9 @@ input[type="text"]:focus,
 @keyframes load-check{
     0%{
         background-color: #00ee55;
+    }
+
+    100%{
+        background-color: #ffffff;
     }
 }
