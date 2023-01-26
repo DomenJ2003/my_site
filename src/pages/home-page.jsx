@@ -25,7 +25,7 @@ function HomePage() {
                             <i className="fa-brands fa-square-js m-1"></i>
                             <i className="fa-brands fa-react m-1"></i>
                             <i className="fa-brands fa-node-js m-1"></i>
-                            <i className="fa-brands fa-java m-1"></i>
+                            {/* <i className="fa-brands fa-java m-1"></i> */}
                             <i className="fa-brands fa-python m-1"></i>
                             <i className="fa-solid fa-c m-1"></i>
                             <i className="fa-solid fa-code m-1"></i>

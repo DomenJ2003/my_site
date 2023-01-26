@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import Navbar from "../components/navbar";
 import "../styles/aboutMe.css";
 
@@ -12,7 +13,7 @@ function aboutMe() {
                 <p>
                     I am Domen Jakopič. Software developer from Slovenia.<br />
                     I am currently studying at the Faculty of Computer Science, Electrical Engineering and Informatics in Maribor.<br />
-                    In addition to my studies, I also work as a web developer. <br />You can also see some of my hobby projects on <a className="link-about-me" href="./my-projects">the my projects page</a>.
+                    In addition to my studies, I also work as a web developer. <br />You can also see some of my hobby projects on <Link className="link-about-me" to="/my-projects">my projects page</Link>.
                 </p>
                 <div style={{height: "200px"}}></div>
             </div>
