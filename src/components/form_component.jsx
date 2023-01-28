@@ -50,8 +50,7 @@ function FormComponent() {
         }
         
         btnRef.current.disabled = true;
-
-        emailjs.sendForm('SERVICE_ID', "TEMPLATE_ID", formRef.current, 'PUBLIC_KEY')
+        emailjs.sendForm(import.meta.env.REACT_APP_SERVICE_ID, import.meta.env.REACT_APP_TEMPLATE_ID, formRef.current, import.meta.env.REACT_APP_API_PUBLIC_KEY)
           .then((result) => {
                     nameRef.current.value = "";
                     senderMailRef.current.value= "";
