@@ -6,6 +6,14 @@
     width: 50%;
 }
 
+ol {
+    margin-left: 17px;
+}
+
+ul{
+    margin-left: 17px;
+}
+
 @media screen and (max-width: 1200px) {
     .text-left{
         width: 40%;
