@@ -10,7 +10,9 @@ function myProjects() {
                 <h3 className="mt-4 text-center">Tasks App</h3>
                 <iframe src="/src/components/tasks/opravila.html" scrolling="no" style={{ border: "2px solid black", overflowX: "hidden" }} frameBorder="0" width={"100%"} height={512}></iframe>
                 <p>
-The Tasks app is a web application that helps you stay organized by managing your tasks. You can add or delete categories, create new tasks, and delete them. The app uses local storage, so your data remains intact even after refreshing the page. Developed with jQuery and Bootstrap, it offers a user-friendly interface and a seamless experience across devices. Stay organized and efficient with the Tasks app.<b>Please try it.</b></p>
+                    The Tasks app is a web application that helps you stay organized by managing your tasks. You can add or delete categories, create new tasks, and delete them. The app uses local storage, so your data remains intact even after refreshing the page. Developed with jQuery and Bootstrap, it offers a user-friendly interface and a seamless experience across devices. Stay organized and efficient with the Tasks app.
+                    <b>Please try it.</b>
+                </p>
                 <hr />
                 <h3 className="mt-3 text-center">Message App</h3>
                 <div className="row p-3 justify-content-lg-around justify-content-xl-around justify-content-md-center justify-content-sm-center" >
@@ -22,17 +24,11 @@ The Tasks app is a web application that helps you stay organized by managing you
                         <li>
                             Login to the app on two different devices:
                             <ul>
-                                <li>
-                                Device 1: Use the username "test1@gmail.com" and the password "test1234".
-                                </li>
-                                <li>
-                                Device 2: Use the username "test2@gmail.com" and the password "test1234".
-                                </li>
+                                <li>Device 1: Use the username "test1@gmail.com" and the password "test1234".</li>
+                                <li>Device 2: Use the username "test2@gmail.com" and the password "test1234".</li>
                             </ul>
                         </li>
-                        <li>
-                        Alternatively, you can register a new user within the app.
-                        </li>
+                        <li>Alternatively, you can register a new user within the app.</li>
                     </ol>    
                     Once you're logged in, you can take advantage of the following features:
                     <ul>
