@@ -19,16 +19,15 @@ function HomePage() {
                             <h1 className="mb-3" style={{textAlign: "left"}}>Domen Jakopič</h1>
                             <h4 className="mb-3" style={{textAlign: "left"}}>Full Stack Developer</h4>
                             <div className="icons" style={{textAlign: "left", fontSize: "20px"}}>
-                            <i className="fa-solid fa-code m-1"></i>
+                            {/* <i className="fa-solid fa-code m-1"></i>
                             <i className="fa-brands fa-html5 m-1"></i>
                             <i className="fa-brands fa-css3-alt m-1"></i>
                             <i className="fa-brands fa-square-js m-1"></i>
                             <i className="fa-brands fa-react m-1"></i>
                             <i className="fa-brands fa-node-js m-1"></i>
-                            {/* <i className="fa-brands fa-java m-1"></i> */}
                             <i className="fa-brands fa-python m-1"></i>
                             <i className="fa-solid fa-c m-1"></i>
-                            <i className="fa-solid fa-code m-1"></i>
+                            <i className="fa-solid fa-code m-1"></i> */}
                             </div>
                             <div className="d-flex m-row">
                             <Link className="btn btn-light btn-lg" to="/my-projects" role="button">
